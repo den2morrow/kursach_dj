@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Главная{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'core/styles.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Главная</a>
+            <a href="{% url 'about' %}">О компании</a>
+            <a href="{% url 'contact' %}">Контакты</a>
+        </nav>
+    </header>
+    <main>
+        <!-- {% block content %}{% endblock %} -->
+    </main>
+    <footer>
+        <p>© 2024, Ваша компания</p>
+    </footer>
+    <!-- <script src="{% static 'core/scripts.js' %}"></script> -->
+</body>
+</html>
