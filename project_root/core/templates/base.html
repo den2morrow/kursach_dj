@@ -9,14 +9,16 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">
-                <h1>ML Services</h1>
+            <div class="navbar-container">
+                <div class="logo">
+                    <h1>ML Services</h1>
+                </div>
+                <nav class="nav-links">
+                    <a href="{% url 'home' %}">Главная</a>
+                    <a href="{% url 'about' %}">О компании</a>
+                    <a href="{% url 'contact' %}">Контакты</a>
+                </nav>
             </div>
-            <nav>
-                <a href="{% url 'home' %}">Главная</a>
-                <a href="{% url 'about' %}">О компании</a>
-                <a href="{% url 'contact' %}">Контакты</a>
-            </nav>
         </div>
     </header>
     
